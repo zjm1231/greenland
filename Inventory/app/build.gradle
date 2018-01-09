@@ -17,6 +17,7 @@ android {
     }
 }
 
+/*数据库相关*/
 apply plugin: 'org.greenrobot.greendao'
 greendao {
     schemaVersion 1
@@ -32,5 +33,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
+    /*数据库相关*/
     compile 'org.greenrobot:greendao:3.2.2'
+
+    /*二维码扫描相关*/
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.2.0'
 }
